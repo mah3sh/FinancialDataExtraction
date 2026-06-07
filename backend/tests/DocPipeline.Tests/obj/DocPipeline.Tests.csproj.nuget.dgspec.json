@@ -1,0 +1,494 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/tests/DocPipeline.Tests/DocPipeline.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.API/DocPipeline.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.API/DocPipeline.API.csproj",
+        "projectName": "DocPipeline.API",
+        "projectPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.API/DocPipeline.API.csproj",
+        "packagesPath": "/Users/maheshthota/.nuget/packages/",
+        "outputPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/maheshthota/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Application/DocPipeline.Application.csproj": {
+                "projectPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Application/DocPipeline.Application.csproj"
+              },
+              "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Infrastructure/DocPipeline.Infrastructure.csproj": {
+                "projectPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Infrastructure/DocPipeline.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.27, 8.0.27]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[8.0.27, 8.0.27]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.27, 8.0.27]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Application/DocPipeline.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Application/DocPipeline.Application.csproj",
+        "projectName": "DocPipeline.Application",
+        "projectPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Application/DocPipeline.Application.csproj",
+        "packagesPath": "/Users/maheshthota/.nuget/packages/",
+        "outputPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/maheshthota/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Domain/DocPipeline.Domain.csproj": {
+                "projectPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Domain/DocPipeline.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.27, 8.0.27]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.27, 8.0.27]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Domain/DocPipeline.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Domain/DocPipeline.Domain.csproj",
+        "projectName": "DocPipeline.Domain",
+        "projectPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Domain/DocPipeline.Domain.csproj",
+        "packagesPath": "/Users/maheshthota/.nuget/packages/",
+        "outputPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/maheshthota/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.27, 8.0.27]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.27, 8.0.27]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Infrastructure/DocPipeline.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Infrastructure/DocPipeline.Infrastructure.csproj",
+        "projectName": "DocPipeline.Infrastructure",
+        "projectPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Infrastructure/DocPipeline.Infrastructure.csproj",
+        "packagesPath": "/Users/maheshthota/.nuget/packages/",
+        "outputPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/maheshthota/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Application/DocPipeline.Application.csproj": {
+                "projectPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Application/DocPipeline.Application.csproj"
+              },
+              "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Domain/DocPipeline.Domain.csproj": {
+                "projectPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Domain/DocPipeline.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Azure.AI.OpenAI": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.12.0, )"
+            },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.21.2, )"
+            },
+            "Docnet.Core": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "PdfPig": {
+              "target": "Package",
+              "version": "[0.1.9, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.27, 8.0.27]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.27, 8.0.27]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/tests/DocPipeline.Tests/DocPipeline.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/tests/DocPipeline.Tests/DocPipeline.Tests.csproj",
+        "projectName": "DocPipeline.Tests",
+        "projectPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/tests/DocPipeline.Tests/DocPipeline.Tests.csproj",
+        "packagesPath": "/Users/maheshthota/.nuget/packages/",
+        "outputPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/tests/DocPipeline.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/maheshthota/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.API/DocPipeline.API.csproj": {
+                "projectPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.API/DocPipeline.API.csproj"
+              },
+              "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Application/DocPipeline.Application.csproj": {
+                "projectPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Application/DocPipeline.Application.csproj"
+              },
+              "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Domain/DocPipeline.Domain.csproj": {
+                "projectPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Domain/DocPipeline.Domain.csproj"
+              },
+              "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Infrastructure/DocPipeline.Infrastructure.csproj": {
+                "projectPath": "/Users/maheshthota/Desktop/ClaudeAI-Projects/FinancialDataExtraction/backend/src/DocPipeline.Infrastructure/DocPipeline.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.10.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.8.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.8.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.27, 8.0.27]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.27, 8.0.27]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
