@@ -131,29 +131,3 @@ app startup → MigrateAsync() → DB schema up-to-date → app serves traffic
     ]
   }
 }
-```
-
-Local dev origins (`http://localhost:5173`) are only in `appsettings.Development.json` — never reach production.
-
----
-
-## 6. Interview Talking Points
-
-### Architecture rationale
-> "I used a 4-layer clean architecture: Domain holds business rules with no dependencies; Application defines use-case interfaces; Infrastructure implements them; API wires everything. This means I can swap Azure OpenAI for Document Intelligence, or Blob for local storage, by implementing one interface — the domain never changes."
-
-### Security decisions
-> "No secrets in config files — JWT key and OpenAI API key come from Key Vault references injected at runtime by Container Apps. JWT is HS256 with a 60-minute expiry. Role claims are embedded in the token so each request is self-contained. Input validation happens at both the API boundary (content-type, file size) and domain layer (guard clauses in Document.Create)."
-
-### Migration strategy
-> "I chose startup migrations for the MVP — it's one fewer deployment concern. The trade-off is a brief startup delay and a multi-replica race condition on first deploy. For production scale-out I'd switch to EF Migration Bundles run as a Container Apps Job before the API rolls out."
-
-### Concurrency strategy
-> "Document rows have a SQL Server RowVersion column mapped as a concurrency token in EF Core. If two workers somehow dequeue the same document ID, the second SaveChangesAsync throws DbUpdateConcurrencyException, which the worker catches and logs — the document is already being processed, so it's safe to skip."
-
-### AI extraction + dynamic schema
-> "Rather than defining a fixed extraction schema, I prompt GPT-4o to determine the schema from the document and return clean JSON. The result is stored as nvarchar(max) and returned as JsonElement to the frontend. This handles invoices, receipts, statements, and POs without schema migrations. The trade-off is weaker type safety downstream — a Reviewer would need to know what fields to expect."
-
-### Trade-offs under time pressure
-> "The in-memory Channel<T> queue means documents are lost on restart. For production I'd add Azure Service Bus or a DB-backed queue. I also skipped refresh token rotation — the JWT expires in 60 minutes and re-login is required, which is fine for an internal tool but not a consumer app."
-```
